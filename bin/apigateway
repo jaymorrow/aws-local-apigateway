@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var fs = require('fs');
+var ApiGateway = require('../');
+
+program
+  .version(JSON.parse(fs.readFileSync(__dirname + '/../package.json', 'utf8')).version)
+  .description('Run a mock AWS API Gateway')
+  .option('-m, --method [path]', 'method config [method]')
+  .option('-M, --method-response [path]', 'method response config [method-response]')
+  .option('-i, --integration [path]', 'method integration config [integration]')
+  .option('-I, --integration-response [path]', 'method integration respsone config [integration-response]')
+  .option('-p, --port <8400>', 'port for mock API Gateway');
+
+program.parse(process.argv);
+
+var api = new ApiGateway({
+    method: program.method,
+    methodResponse: program.methodResponse,
+    integration: program.integration,
+    integrationResponse: program.integrationResponse,
+    port: program.port || 8400
+});
+
+api.open();

@@ -1,0 +1,36 @@
+{
+  "name": "aws-mock-apigateway",
+  "version": "0.0.1",
+  "description": "Mock AWS API Gateway for local testing.",
+  "main": "index.js",
+  "bin": {
+    "apigateway": "./bin/apigateway"
+  },
+  "dependencies": {
+    "JSONPath": "^0.10.0",
+    "commander": "^2.9.0",
+    "uuid": "^2.0.1",
+    "velocityjs": "^0.7.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "request": "^2.67.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "mocha": "mocha -G -w"
+  },
+  "keywords": [
+    "aws",
+    "api",
+    "gateway",
+    "mock"
+  ],
+  "files": [
+    "bin",
+    "lib",
+    "index.js"
+  ],
+  "author": "Jay Morrow <jay.m.morrow@gmail.com>",
+  "license": "MIT"
+}
