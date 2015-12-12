@@ -1,1 +1,1 @@
-# aws-mock-apigateway
+# aws-local-apigateway
