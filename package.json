@@ -1,6 +1,6 @@
 {
   "name": "aws-mock-apigateway",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mock AWS API Gateway for local testing.",
   "main": "index.js",
   "bin": {
@@ -17,6 +17,7 @@
     "request": "^2.67.0"
   },
   "scripts": {
+    "start": "node bin/apigateway -i test-helpers/integration.json",
     "test": "mocha",
     "mocha": "mocha -G -w"
   },
