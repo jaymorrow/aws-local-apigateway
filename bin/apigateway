@@ -12,7 +12,7 @@ function responseHandler(val) {
 }
 
 program
-    .version(JSON.parse(fs.readFileSync(__dirname + '/../package.json', 'utf8')).version)
+    .version(require(path.resolve(__dirname, '..', 'package.json')).version)
     .description('Run a mock AWS API Gateway')
     // .option('-m, --method [path]', 'method config [method]')
     // .option('-M, --method-response [path]', 'method response config [method-response]')

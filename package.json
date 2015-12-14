@@ -9,6 +9,7 @@
   "dependencies": {
     "JSONPath": "^0.10.0",
     "commander": "^2.9.0",
+    "object-assign": "^4.0.1",
     "uuid": "^2.0.1",
     "velocityjs": "^0.7.4"
   },
