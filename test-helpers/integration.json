@@ -1,7 +1,7 @@
 {
-    "httpMethod": "POST",
+    "httpMethod": "GET",
     "requestParameters": {
-        "integration.request.querystring.foo": "method.request.querystring.bar",
+        "integration.request.querystring.foo": "method.request.querystring.foo",
         "integration.request.path.id": "method.request.path.id"
     },
     "requestTemplates": {

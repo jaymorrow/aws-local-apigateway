@@ -21,6 +21,7 @@ describe('Starting', function() {
                 if (!error && response.statusCode == 200) {
                     console.log(body);
                 }
+
                 assert.ok(true);
                 close(done);
             });
