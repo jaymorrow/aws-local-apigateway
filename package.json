@@ -1,6 +1,6 @@
 {
   "name": "aws-local-apigateway",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Mock AWS API Gateway for local testing.",
   "main": "index.js",
   "bin": {
