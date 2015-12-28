@@ -20,7 +20,8 @@
   "scripts": {
     "start": "node bin/apigateway -i test-helpers/integration.json",
     "test": "mocha",
-    "mocha": "mocha -G -w"
+    "mocha": "mocha -G -w",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "aws",
